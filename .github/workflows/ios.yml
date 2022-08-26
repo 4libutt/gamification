@@ -44,6 +44,3 @@ jobs:
           xcodebuild test-without-building -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
-        with:
-          gcov: true
-          gcov_include: gamification
