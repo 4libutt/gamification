@@ -56,6 +56,7 @@
 		527E43A44B9FCFB667AB50FF /* Pods_TFAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96EA2280393C347E5C8FEDEE /* Pods_TFAppUITests.framework */; };
 		621D787A28B8BA0500AE8DD2 /* UICollectionView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D787928B8BA0500AE8DD2 /* UICollectionView+Helper.swift */; };
 		621D787C28B8BA2D00AE8DD2 /* Array+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D787B28B8BA2D00AE8DD2 /* Array+Helper.swift */; };
+		621D787F28B8EA3800AE8DD2 /* LaunchScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D787E28B8EA3800AE8DD2 /* LaunchScreenTest.swift */; };
 		6224236027D104250028CAB2 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6224235F27D104250028CAB2 /* HomeInteractor.swift */; };
 		6224236227D1046B0028CAB2 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6224236127D1046B0028CAB2 /* HomePresenter.swift */; };
 		6224236427D104A40028CAB2 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6224236327D104A40028CAB2 /* HomeRouter.swift */; };
@@ -296,6 +297,8 @@
 		5AF98642C51DA26BF08634A5 /* Pods-TFAppUITests.release appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TFAppUITests.release appstore.xcconfig"; path = "Target Support Files/Pods-TFAppUITests/Pods-TFAppUITests.release appstore.xcconfig"; sourceTree = "<group>"; };
 		621D787928B8BA0500AE8DD2 /* UICollectionView+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Helper.swift"; sourceTree = "<group>"; };
 		621D787B28B8BA2D00AE8DD2 /* Array+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Helper.swift"; sourceTree = "<group>"; };
+		621D787D28B8EA3800AE8DD2 /* TFPresentationTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TFPresentationTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		621D787E28B8EA3800AE8DD2 /* LaunchScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenTest.swift; sourceTree = "<group>"; };
 		6224235F27D104250028CAB2 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		6224236127D1046B0028CAB2 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		6224236327D104A40028CAB2 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
@@ -1317,6 +1320,8 @@
 		D37C491423B5FF90009A6C8E /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				621D787E28B8EA3800AE8DD2 /* LaunchScreenTest.swift */,
+				621D787D28B8EA3800AE8DD2 /* TFPresentationTests-Bridging-Header.h */,
 			);
 			path = Launch;
 			sourceTree = "<group>";
@@ -1626,7 +1631,7 @@
 					};
 					1DC7E9B52366E774006DBA10 = {
 						CreatedOnToolsVersion = 11.0;
-						LastSwiftMigration = 1100;
+						LastSwiftMigration = 1340;
 						TestTargetID = 1DC7E9302366E6BD006DBA10;
 					};
 					1DC7E9D12366E7DC006DBA10 = {
@@ -2147,6 +2152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				621D787F28B8EA3800AE8DD2 /* LaunchScreenTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2799,6 +2805,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearetriple.TFPresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TFPresentationTests/Classes/Scenes/Launch/TFPresentationTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2821,6 +2828,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearetriple.TFPresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TFPresentationTests/Classes/Scenes/Launch/TFPresentationTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFApp.app/TFApp";
@@ -3219,6 +3227,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearetriple.TFPresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TFPresentationTests/Classes/Scenes/Launch/TFPresentationTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3565,6 +3574,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearetriple.TFPresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TFPresentationTests/Classes/Scenes/Launch/TFPresentationTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -3900,6 +3910,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearetriple.TFPresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TFPresentationTests/Classes/Scenes/Launch/TFPresentationTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFApp.app/TFApp";
@@ -4232,6 +4243,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearetriple.TFPresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TFPresentationTests/Classes/Scenes/Launch/TFPresentationTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFApp.app/TFApp";
@@ -4564,6 +4576,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.wearetriple.TFPresentationTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TFPresentationTests/Classes/Scenes/Launch/TFPresentationTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TFApp.app/TFApp";

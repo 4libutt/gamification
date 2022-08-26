@@ -11,9 +11,9 @@ import XCTest
 
 final class PresentationSingletonAssemblyTest: XCTestCase {
     
-    func test_container_shouldBeAbleToResolveAllRegisteredObject() {
-        
-        tryToResolveSingleton(UIScreen.self)
-        tryToResolveSingleton(UIWindow.self)
-    }
+//    func test_container_shouldBeAbleToResolveAllRegisteredObject() {
+//
+//        tryToResolveSingleton(UIScreen.self)
+//        tryToResolveSingleton(UIWindow.self)
+//    }
 }
