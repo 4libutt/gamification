@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (5.5.0)
+  - EasyPeasy (1.9.0)
+  - Nuke (10.7.1)
+  - Resolver (1.5.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - EasyPeasy
+  - Nuke
+  - Resolver
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - EasyPeasy
+    - Nuke
+    - Resolver
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  EasyPeasy: 19a84ef8f8bbcf925b9fecc29d1d78b7dab96718
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
+  Resolver: 68984624572763018fd8ec7b8e3e8df0e3b6bba5
+
+PODFILE CHECKSUM: 9b4e048a3805fcd809e66e4ca2ea509cfffa3845
+
+COCOAPODS: 1.11.2
