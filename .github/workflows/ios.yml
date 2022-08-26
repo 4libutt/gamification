@@ -45,4 +45,4 @@ jobs:
 curl -Os https://uploader.codecov.io/latest/macos/codecov
 
 chmod +x codecov
-./codecov -t ${CODECOV_TOKEN}
+./codecov -t ${cf7c7f63-9f52-4ee8-ab44-59337b38c712}
