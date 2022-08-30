@@ -47,7 +47,4 @@ jobs:
           file_to_build=`echo $file_to_build | awk '{$1=$1;print}'`
           xcodebuild test-without-building -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1.2.1
-        with:
-          ignore:
-            'pods/**'
+        uses: codecov/codecov-action@v1.2.
