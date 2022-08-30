@@ -36,10 +36,12 @@ extension DetailInteractor {
             presenter?.presentTitle(pokemon: selectedPokemon)
             Task {
                 do {
+                    
                     let detail = try await getPokemonDetailsWorker.invoke(with: selectedPokemon.name)
                     self.details = detail
 
                     presenter?.present(details: detail)
+                    
                 } catch let error {
                     debugPrint(error)
                 }
