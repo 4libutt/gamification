@@ -4,10 +4,11 @@ on:
   push:
     branches: [ "main" ]
     paths-ignore:
-      - 'Pods'
+      - 'pods/**'
   pull_request:
     branches: [ "main" ]
-
+    paths-ignore:
+      - 'pods/**'
 
 jobs:
   build:
@@ -49,4 +50,4 @@ jobs:
         uses: codecov/codecov-action@v1.2.1
         with:
           ignore:
-            "Pods"
+            'pods/**'
