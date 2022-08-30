@@ -4,11 +4,10 @@ on:
   push:
     branches: [ "main" ]
     paths-ignore:
-      - 'Pods/**'
+      - 'Pods'
   pull_request:
     branches: [ "main" ]
-    paths-ignore:
-      - 'Pods/**'
+
 
 jobs:
   build:
@@ -48,3 +47,6 @@ jobs:
           xcodebuild test-without-building -scheme "$scheme" -"$filetype_parameter" "$file_to_build" -destination "platform=$platform,name=$device"
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1.2.1
+        with:
+          ignore:
+            "Pods"
